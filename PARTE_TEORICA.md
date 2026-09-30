@@ -1,6 +1,6 @@
 # Parte Teórica — Análise e Discussão
 
-**Aluno:** Mauro Cunha
+**Aluno:** Mauro Roberto da Cruz Cunha
 **Curso:** Tecnologia em Inteligência Artificial e Automação Digital — UniFECAF
 **Disciplina:** Algoritmos e Lógica de Programação
 
