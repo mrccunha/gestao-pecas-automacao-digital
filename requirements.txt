@@ -1,0 +1,3 @@
+# O sistema em si roda com a biblioteca padrao do Python (nenhuma dependencia).
+# A linha abaixo e so para rodar os testes automatizados:
+pytest>=8.0

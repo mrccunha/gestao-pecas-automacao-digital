@@ -1,0 +1,9 @@
+[project]
+name = "automacao-digital-pecas"
+version = "1.0.0"
+description = "Prototipo de controle de qualidade e armazenamento de pecas em Python"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

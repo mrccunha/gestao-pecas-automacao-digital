@@ -1,0 +1,16 @@
+# Dados gerados em tempo de execucao
+dados.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Editores
+.vscode/
+.idea/
+
+# Enunciado do trabalho (nao faz parte da entrega)
+TRABALHO*.pdf
