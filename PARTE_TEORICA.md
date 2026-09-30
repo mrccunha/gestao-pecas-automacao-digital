@@ -1,10 +1,8 @@
 # Parte Teórica — Análise e Discussão
 
-> **Rascunho para você revisar e reescrever com as suas palavras antes de
-> entregar.** Troque os trechos entre colchetes, ajuste o tom e acrescente
-> exemplos da sua vivência. O professor valoriza quando o texto tem a sua voz —
-> e, no seu caso, a história "dev JavaScript aprendendo a pensar em Python" é
-> autêntica e vale a pena aparecer.
+**Aluno:** Mauro Cunha
+**Curso:** Tecnologia em Inteligência Artificial e Automação Digital — UniFECAF
+**Disciplina:** Algoritmos e Lógica de Programação
 
 ---
 
@@ -116,9 +114,18 @@ para:
 Escrever os testes foi, na prática, a parte em que mais *pensei no problema*:
 casos de fronteira (peso exatamente 95, comprimento exatamente 20), o que
 acontece ao remover a peça que "segura" uma caixa cheia, o ciclo
-salvar/carregar. *[Se você usou IA como apoio, pode dizer aqui com naturalidade
-que ela acelerou a escrita, mas as decisões de arquitetura e os testes partiram
-de você — é o que a disciplina espera de uma ferramenta de IA.]*
+salvar/carregar.
+
+Vale registrar que usei um assistente de IA como par de programação durante o
+desenvolvimento — o que, considerando o curso, é exatamente a ferramenta que a
+formação me prepara para usar bem. A IA acelerou a digitação do código e sugeriu
+a estrutura inicial dos módulos, mas as decisões de arquitetura foram minhas:
+foi ali que resolvi trocar o estado global por uma classe de fachada, mudei o
+jeito de tratar as caixas (de "salvar" para "recalcular") depois de identificar
+o bug de numeração furada ao remover peça, e defini quais casos de fronteira os
+testes precisavam cobrir. Usar IA como ferramenta e saber explicar cada decisão
+é, na minha visão, a diferença entre automatizar o pensamento e automatizar a
+digitação — e é essa segunda coisa que busquei aqui.
 
 ---
 
@@ -146,8 +153,14 @@ de você — é o que a disciplina espera de uma ferramenta de IA.]*
   lugar de número, vírgula em vez de ponto, campo vazio, id inexistente.
 - **Manter os módulos realmente desacoplados**, sem import circular (ex.:
   `relatorio` usa `SistemaProducao`, mas `sistema` não conhece `relatorio`).
-- *[Cite aqui alguma dificuldade sua específica: ambiente Python no Windows,
-  `pytest` achar o pacote `src`, Git, etc.]*
+- **Ambiente Windows.** No meu dia a dia uso Node/JS, então tive que me
+  situar de novo no ecossistema Python no Windows — o launcher `py` no lugar
+  do `python`, e configurar o `pyproject.toml` (`pythonpath = ["."]`) para o
+  `pytest` conseguir importar o pacote `src` a partir da pasta `tests`.
+- **Git do zero neste projeto.** Optei por não fazer um único commit
+  gigante e sim separar por camada (modelos, regras, armazenamento,
+  persistência, fachada, relatório, CLI, testes, docs) — ficou mais fácil de
+  revisar e reflete melhor a ordem em que o raciocínio foi montado.
 
 ---
 
