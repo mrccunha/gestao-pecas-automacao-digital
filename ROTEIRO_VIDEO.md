@@ -1,21 +1,21 @@
 # Roteiro do Vídeo Pitch (até 4 minutos)
 
-> Fale de forma natural: olhe para a câmera nas explicações e para a tela na
-> demonstração. Cronômetro à vista. Os tempos são sugestões.
+> Cronômetro à vista. Os tempos são sugestões.
 >
 > **Objetivo implícito deste roteiro:** deixar claro que você *pensou no
 > problema* e *domina o código* — que a IA foi ferramenta, não autora. Isso se
 > faz mostrando decisões, trade-offs e uma edição ao vivo, não com disclaimer.
 
-## Gravação (OBS já configurado)
+## Gravação (OBS com 2 cenas)
 
-Cena com duas fontes: **Captura de Janela** (VSCode) + **Dispositivo de Captura
-de Vídeo** (webcam, redimensionada num canto como PiP) + microfone no Mixer de
-Áudio. Um arquivo só, câmera e tela juntas — por isso o "olhe pra câmera /
-olhe pra tela" do roteiro faz sentido literal: nos blocos de **explicação**
-(abertura, decisões, boas práticas, fechamento) olhe pro círculo da webcam; nos
-blocos de **demonstração** (seção 2, a edição ao vivo, os testes) olhe pra
-tela, é natural que o olhar siga o mouse.
+- **Cena `Abertura`:** Captura de Janela (VSCode) + webcam em PiP num canto.
+  Usada só no bloco **[0:00–0:25]** — olhe pra webcam enquanto se apresenta.
+- **Cena `Demo`:** só a Captura de Janela do VSCode, sem webcam. Usada do
+  **[0:25] em diante** — narração em áudio sobre a tela, sem rosto aparecendo.
+
+Microfone ativo no Mixer de Áudio em ambas as cenas. Troque de `Abertura` pra
+`Demo` ao vivo (clicando na lista de Cenas) assim que terminar a fala de
+apresentação — é um corte instantâneo, sem precisar editar depois.
 
 Pode manter o `ROTEIRO_VIDEO.md` aberto numa outra janela sobreposta à do
 VSCode na sua tela — como a fonte é Captura de Janela, só o VSCode entra na
@@ -23,7 +23,7 @@ gravação.
 
 ---
 
-## [0:00 – 0:25] Abertura, contexto e problema
+## [0:00 – 0:25] Abertura, contexto e problema — cena `Abertura` (webcam)
 
 > "Olá, meu nome é **[seu nome]**, do curso de Tecnologia em Inteligência
 > Artificial e Automação Digital da UniFECAF. Sou desenvolvedor há mais de 30
@@ -35,9 +35,12 @@ gravação.
 > erro de conferência e custa caro. A ideia é transformar essa conferência em
 > **regras de software** que decidem na hora se a peça passa."
 
+**→ Troque para a cena `Demo` agora** (clique na lista de Cenas do OBS).
+Daqui até o fim é só tela, sem webcam.
+
 ---
 
-## [0:25 – 1:00] Como pensei o problema (antes do código)
+## [0:25 – 1:00] Como pensei o problema (antes do código) — cena `Demo`
 
 > "Antes de escrever qualquer linha, quebrei o desafio em quatro perguntas:
 >
@@ -135,10 +138,13 @@ gravação.
 
 ## Checklist antes de gravar
 
-- [ ] No OBS: pré-visualização mostrando VSCode nítido + webcam no canto
-      (PiP) + barrinha do Mic/Aux se mexendo ao falar.
-- [ ] Gravar um teste de 10s, reproduzir e confirmar que: tela + webcam + áudio
-      aparecem juntos, e a janela do roteiro sobreposta **não** aparece.
+- [ ] No OBS: as duas cenas prontas — `Abertura` (VSCode + webcam em PiP) e
+      `Demo` (só VSCode) — e a barrinha do Mic/Aux se mexendo ao falar nas duas.
+- [ ] Testar a troca de cena `Abertura` → `Demo` clicando na lista, pra saber
+      exatamente onde clicar na hora de gravar valendo.
+- [ ] Gravar um teste de 10s (com a troca de cena incluída), reproduzir e
+      confirmar que: tela + webcam + áudio aparecem certos, o corte de cena é
+      limpo, e a janela do roteiro sobreposta **não** aparece.
 - [ ] Terminal e editor do VSCode com fonte grande (`Ctrl +` ou
       `terminal.integrated.fontSize` nas configurações).
 - [ ] Apagar o `dados.json` antes de começar (demo do zero) — ou pré-cadastrar
