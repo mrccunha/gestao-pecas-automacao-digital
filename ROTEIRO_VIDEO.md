@@ -7,6 +7,20 @@
 > problema* e *domina o código* — que a IA foi ferramenta, não autora. Isso se
 > faz mostrando decisões, trade-offs e uma edição ao vivo, não com disclaimer.
 
+## Gravação (OBS já configurado)
+
+Cena com duas fontes: **Captura de Janela** (VSCode) + **Dispositivo de Captura
+de Vídeo** (webcam, redimensionada num canto como PiP) + microfone no Mixer de
+Áudio. Um arquivo só, câmera e tela juntas — por isso o "olhe pra câmera /
+olhe pra tela" do roteiro faz sentido literal: nos blocos de **explicação**
+(abertura, decisões, boas práticas, fechamento) olhe pro círculo da webcam; nos
+blocos de **demonstração** (seção 2, a edição ao vivo, os testes) olhe pra
+tela, é natural que o olhar siga o mouse.
+
+Pode manter o `ROTEIRO_VIDEO.md` aberto numa outra janela sobreposta à do
+VSCode na sua tela — como a fonte é Captura de Janela, só o VSCode entra na
+gravação.
+
 ---
 
 ## [0:00 – 0:25] Abertura, contexto e problema
@@ -58,7 +72,7 @@
 
 ## [1:40 – 3:00] Demonstração ao vivo (terminal)
 
-> "Rodando com `python main.py`."
+> "Rodando com `py main.py`."
 
 **Faça nesta ordem:**
 
@@ -121,12 +135,19 @@
 
 ## Checklist antes de gravar
 
-- [ ] Terminal com fonte grande e boa legibilidade.
+- [ ] No OBS: pré-visualização mostrando VSCode nítido + webcam no canto
+      (PiP) + barrinha do Mic/Aux se mexendo ao falar.
+- [ ] Gravar um teste de 10s, reproduzir e confirmar que: tela + webcam + áudio
+      aparecem juntos, e a janela do roteiro sobreposta **não** aparece.
+- [ ] Terminal e editor do VSCode com fonte grande (`Ctrl +` ou
+      `terminal.integrated.fontSize` nas configurações).
 - [ ] Apagar o `dados.json` antes de começar (demo do zero) — ou pré-cadastrar
       10 aprovadas se quiser mostrar uma caixa cheia na opção 4.
 - [ ] Ensaiar o roteiro uma vez, principalmente a edição ao vivo.
 - [ ] Ter o editor já aberto no `src/qualidade.py`.
 - [ ] Áudio limpo, sem eco. Vídeo com menos de 4 minutos.
 - [ ] Reverter a alteração de teste no `qualidade.py` antes do commit final.
+- [ ] Parar a gravação no OBS, conferir o arquivo gerado (pasta definida em
+      Configurações → Saída) antes de subir.
 - [ ] Subir o vídeo como **público ou não listado** (YouTube, Loom, Drive) e
       colar o link na entrega.
