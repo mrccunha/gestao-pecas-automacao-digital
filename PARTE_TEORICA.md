@@ -5,6 +5,9 @@
 **Curso:** Tecnologia em Inteligência Artificial e Automação Digital — UniFECAF
 **Disciplina:** Algoritmos e Lógica de Programação
 
+**Repositório (código-fonte):** https://github.com/mrccunha/gestao-pecas-automacao-digital
+**Vídeo Pitch:** https://youtu.be/6maB2vsb6z4
+
 ---
 
 ## 1. Contextualização do desafio: por que a automação é importante na indústria
